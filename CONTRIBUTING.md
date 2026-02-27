@@ -6,7 +6,7 @@ Thank you for your interest in contributing to TmuxPulse! This guide will help y
 
 ### Prerequisites
 
-- **Rust 1.75+** -- install via [rustup](https://rustup.rs/)
+- **Rust 1.88+** -- install via [rustup](https://rustup.rs/)
 - **tmux 3.1+** -- install via your package manager
 - **Git** -- for version control
 

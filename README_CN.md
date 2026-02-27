@@ -6,7 +6,7 @@
 [![Release](https://github.com/justinhuangcode/tmuxpulse/actions/workflows/release.yml/badge.svg)](https://github.com/justinhuangcode/tmuxpulse/actions/workflows/release.yml)
 [![Crates.io](https://img.shields.io/crates/v/tmuxpulse?style=flat-square)](https://crates.io/crates/tmuxpulse)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Rust](https://img.shields.io/badge/rust-1.75%2B-orange.svg?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org)
+[![Rust](https://img.shields.io/badge/rust-1.88%2B-orange.svg?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey?style=flat-square)](https://github.com/justinhuangcode/tmuxpulse)
 [![GitHub Stars](https://img.shields.io/github/stars/justinhuangcode/tmuxpulse?style=flat-square&logo=github)](https://github.com/justinhuangcode/tmuxpulse/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/justinhuangcode/tmuxpulse?style=flat-square)](https://github.com/justinhuangcode/tmuxpulse/commits/main)
@@ -130,7 +130,7 @@ cd tmuxpulse
 cargo install --path .
 ```
 
-**依赖条件：** Rust 1.75+ 和 tmux 3.1+。启动 tmuxpulse 前需先运行 tmux（`tmux new -s mysession`）。
+**依赖条件：** Rust 1.88+ 和 tmux 3.1+。启动 tmuxpulse 前需先运行 tmux（`tmux new -s mysession`）。
 
 ## 快速开始
 

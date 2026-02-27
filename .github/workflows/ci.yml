@@ -79,10 +79,10 @@ jobs:
           path: target/${{ matrix.target }}/release/tmuxpulse
 
   msrv:
-    name: MSRV (1.75)
+    name: MSRV (1.88)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@1.75
+      - uses: dtolnay/rust-toolchain@1.88
       - uses: Swatinem/rust-cache@v2
       - run: cargo check

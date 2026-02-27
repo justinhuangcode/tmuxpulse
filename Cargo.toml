@@ -2,7 +2,7 @@
 name = "tmuxpulse"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.75"
+rust-version = "1.88"
 description = "A real-time, event-driven TUI for monitoring and managing tmux sessions"
 license = "MIT"
 homepage = "https://github.com/justinhuangcode/tmuxpulse"
