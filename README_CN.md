@@ -12,7 +12,9 @@
 [![Last Commit](https://img.shields.io/github/last-commit/justinhuangcode/tmuxpulse?style=flat-square)](https://github.com/justinhuangcode/tmuxpulse/commits/main)
 [![Issues](https://img.shields.io/github/issues/justinhuangcode/tmuxpulse?style=flat-square)](https://github.com/justinhuangcode/tmuxpulse/issues)
 
-实时、事件驱动的 TUI 工具，用于监控和管理 tmux 会话。一目了然地查看所有会话，使用键盘或鼠标导航，跨面板搜索，管理闲置会话 -- 全部在一个终端窗口内完成。
+实时事件驱动的 tmux 终端界面工具，支持会话监控、跨面板搜索与闲置清理。 💓
+
+一目了然地查看所有会话，使用键盘或鼠标导航，跨面板搜索，管理闲置会话 -- 全部在一个终端窗口内完成。
 
 ## tmux 术语速查
 
