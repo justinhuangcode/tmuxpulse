@@ -1,0 +1,37 @@
+---
+source: tests/snapshots.rs
+assertion_line: 56
+expression: json
+---
+{
+  "id": "$1",
+  "name": "dev",
+  "attached": true,
+  "windows": [
+    {
+      "id": "@1",
+      "session_id": "$1",
+      "name": "editor",
+      "index": 0,
+      "active": true,
+      "panes": [
+        {
+          "id": "%1",
+          "window_id": "@1",
+          "session_id": "$1",
+          "index": 0,
+          "active": true,
+          "width": 120,
+          "height": 40,
+          "current_command": "nvim",
+          "current_path": "/home/user/project",
+          "pid": 12345,
+          "dead": false,
+          "last_activity": 1700000500
+        }
+      ]
+    }
+  ],
+  "created_at": 1700000000,
+  "last_activity": 1700000500
+}

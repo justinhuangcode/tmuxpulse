@@ -1,0 +1,9 @@
+---
+source: tests/snapshots.rs
+assertion_line: 22
+expression: json
+---
+{
+  "sessions": [],
+  "timestamp": 1700000000
+}

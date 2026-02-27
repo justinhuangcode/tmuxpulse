@@ -1,0 +1,36 @@
+---
+source: tests/snapshots.rs
+assertion_line: 12
+expression: toml_str
+---
+[general]
+theme = "default"
+poll_interval_ms = 1000
+capture_lines = 200
+stale_threshold_secs = 3600
+
+[ui]
+show_hidden = false
+default_view = "grid"
+mouse = true
+border_style = "rounded"
+show_status_bar = true
+card_min_width = 40
+card_min_height = 12
+
+[keybindings]
+quit = "q"
+search = "/"
+palette = "ctrl+p"
+maximize = "z"
+collapse = "c"
+kill_stale = "X"
+next_tab = "shift+right"
+prev_tab = "shift+left"
+
+[daemon]
+auth_token = "auto"
+
+[plugins]
+enabled = []
+directories = []

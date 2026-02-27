@@ -1,0 +1,53 @@
+[package]
+name = "tmuxpulse"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "A real-time, event-driven TUI for monitoring and managing tmux sessions"
+license = "MIT"
+homepage = "https://github.com/justinhuangcode/tmuxpulse"
+repository = "https://github.com/justinhuangcode/tmuxpulse"
+readme = "README.md"
+keywords = ["tmux", "tui", "terminal", "monitor", "multiplexer"]
+categories = ["command-line-utilities", "development-tools"]
+exclude = ["tests/", ".github/", ".specify/", ".claude/", "themes/"]
+
+[dependencies]
+# TUI
+ratatui = "0.29"
+crossterm = "0.28"
+
+# Async
+tokio = { version = "1", features = ["full"] }
+
+# CLI
+clap = { version = "4", features = ["derive"] }
+
+# Config & Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+dirs = "6"
+
+# Error handling
+anyhow = "1"
+thiserror = "2"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+unicode-width = "0.2"
+libc = "0.2"
+
+[dev-dependencies]
+insta = "1"
+tempfile = "3"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+opt-level = "z"

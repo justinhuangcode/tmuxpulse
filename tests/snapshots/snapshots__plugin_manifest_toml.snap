@@ -1,0 +1,14 @@
+---
+source: tests/snapshots.rs
+assertion_line: 70
+expression: toml_str
+---
+name = "example-plugin"
+version = "1.0.0"
+description = "An example plugin"
+entry = "./run.sh"
+hooks = [
+    "on_snapshot",
+    "on_event",
+]
+min_version = "0.1.0"
