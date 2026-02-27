@@ -14,11 +14,29 @@
 
 A real-time, event-driven TUI for monitoring and managing tmux sessions. See all your sessions at a glance, navigate with keyboard or mouse, search across panes, and manage stale sessions -- all from a single terminal window.
 
+## tmux Terminology
+
+tmux organizes work in a three-level hierarchy. Understanding this makes the rest of the docs much clearer:
+
+```
+Session (independent workspace, e.g. "backend", "frontend")
+  └── Window (tab within a session, switched with Ctrl-b n)
+        └── Pane (split within a window, e.g. left: server, right: logs)
+```
+
+| Concept | Analogy | Example |
+|---|---|---|
+| **Session** | A virtual desktop | `tmux new -s backend` creates a session named "backend" |
+| **Window** | A tab in that desktop | One window for `vim`, another for `git` |
+| **Pane** | A split within a tab | Left pane runs the server, right pane tails logs |
+
+A developer might have 10 sessions, each with 2-3 windows, each with 1-2 panes. That's 20-60 terminal viewports -- and `tmux ls` only shows the session names.
+
 ## Why tmuxpulse?
 
-tmux power users run dozens of sessions simultaneously. Checking what's happening across them means manually cycling through `tmux ls`, `tmux attach`, and `Ctrl-b n` -- losing context every time you switch.
+tmux power users run dozens of sessions simultaneously. To check what's happening across them, you have to manually cycle through `tmux ls` (list sessions) → `tmux attach -t <name>` (enter a session) → look around → `Ctrl-b d` (detach) → repeat for the next session. Every switch breaks your focus.
 
-tmuxpulse gives you **instant situational awareness** across your entire tmux estate without leaving your current terminal.
+tmuxpulse gives you **a single dashboard showing all sessions, windows, and panes in real time** -- without leaving your current terminal.
 
 Existing tools don't fit this workflow:
 
