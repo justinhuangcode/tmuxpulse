@@ -4,7 +4,6 @@
 
 [![CI](https://github.com/justinhuangcode/tmuxpulse/actions/workflows/ci.yml/badge.svg)](https://github.com/justinhuangcode/tmuxpulse/actions/workflows/ci.yml)
 [![Release](https://github.com/justinhuangcode/tmuxpulse/actions/workflows/release.yml/badge.svg)](https://github.com/justinhuangcode/tmuxpulse/actions/workflows/release.yml)
-[![Crates.io](https://img.shields.io/crates/v/tmuxpulse?style=flat-square)](https://crates.io/crates/tmuxpulse)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Rust](https://img.shields.io/badge/rust-1.88%2B-orange.svg?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey?style=flat-square)](https://github.com/justinhuangcode/tmuxpulse)
@@ -118,7 +117,7 @@ brew tap justinhuangcode/tap
 brew install tmuxpulse
 ```
 
-### 通过 Cargo (crates.io)
+### 通过 Cargo (crates.io) -- 即将上线
 
 ```bash
 cargo install tmuxpulse

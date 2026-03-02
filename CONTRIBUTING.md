@@ -137,6 +137,20 @@ Key principles:
 
 When adding new serializable types, add an Insta snapshot test to ensure format stability.
 
+## Publishing to crates.io
+
+Maintainers can publish new versions via the GitHub Actions workflow:
+
+1. Generate an API token at [crates.io/settings/tokens](https://crates.io/settings/tokens)
+2. Add it as a repository secret named `CARGO_REGISTRY_TOKEN` in **Settings > Secrets > Actions**
+3. Bump the version in `Cargo.toml`
+4. Trigger the **Publish to crates.io** workflow from the Actions tab (supports dry-run)
+
+Once published, re-add the crates.io badge to both READMEs:
+```md
+[![Crates.io](https://img.shields.io/crates/v/tmuxpulse?style=flat-square)](https://crates.io/crates/tmuxpulse)
+```
+
 ## Questions?
 
 Open an issue or start a discussion. We're happy to help!
