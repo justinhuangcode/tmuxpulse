@@ -34,7 +34,7 @@ Session (independent workspace, e.g. "backend", "frontend")
 
 A developer might have 10 sessions, each with 2-3 windows, each with 1-2 panes. That's 20-60 terminal viewports -- and `tmux ls` only shows the session names.
 
-## Why tmuxpulse?
+## Why TmuxPulse?
 
 tmux power users run dozens of sessions simultaneously. To check what's happening across them, you have to manually cycle through `tmux ls` (list sessions) → `tmux attach -t <name>` (enter a session) → look around → `Ctrl-b d` (detach) → repeat for the next session. Every switch breaks your focus.
 
